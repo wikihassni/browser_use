@@ -14,9 +14,7 @@ async def main(task_override: str | None = None):       # {{ edit_2 }}
 
     # use the override if provided, otherwise fall back to your original task
     task_str = task_override or (                      # {{ edit_3 }}
-        "Visit the official YC website and compile all enterprise "
-        "information under the W25 B2B tag into a clear, well-structured table. "
-        "Be sure to find all of it"
+        "Visit https://launchaccelerator.co/ and tell me how much do they invest in a company"
     )
 
     agent = Agent(
