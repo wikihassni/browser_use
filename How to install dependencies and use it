@@ -1,0 +1,19 @@
+install dependencies and use it 
+
+# 1. Go to your project directory
+cd "C:\Users\muhammad.waqas\wikihassni_task\browser-use"
+
+# 2. (Optional) Remove old virtual environment if it exists
+if (Test-Path .\venv) { Remove-Item -Recurse -Force .\venv }
+
+# 3. Create a new virtual environment
+python -m venv venv
+
+# 4. Activate the virtual environment
+.\venv\Scripts\activate
+
+# 5. Install project dependencies
+pip install .
+
+# 6. (Optional) Install development dependencies
+pip install ruff tokencost build pytest pytest-asyncio fastapi inngest uvicorn langchain-fireworks ipdb pre-commit codespell
